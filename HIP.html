@@ -1,0 +1,559 @@
+<!--DOCTYPE HTML-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<a href = "/"></a>
+<body>
+<div class = "nav">
+	<div class="trapezoid"></div>
+		<div class="company_name"><b>Music for Deaf People</b>
+		</div>
+</div>
+
+<div class = "overlap_buttons">
+
+	<div class = "save_border_top" onmouseover=change() onmouseout=normalise()>
+	</div>
+		<div class = "volume_border_top" onmouseover=change1() onmouseout=normalise1()>
+		</div>
+			<div class = "slider_border_top" onmouseover=change2() onmouseout=normalise2()>
+			</div>
+			<div class = "metronome_border_top" onmouseover=change3() onmouseout=normalise3()>
+			</div>
+		<div class = "tempo_speed_border_top" onmouseover=change4() onmouseout=normalise4()>
+		</div>
+	<div class = "loop_border_top" onmouseover=change5() onmouseout=normalise5()>
+	</div>
+</div>
+
+<div class = "icon_borders">
+	<div id = "save_borderID" class = "save_border"></div>
+		<div id = "volume_borderID" class = "volume_border"></div>
+			<div id = "slider_borderID" class = "slider_border"></div>
+			<div id = "metronome_borderID" class = "metronome_border"></div>
+		<div id = "tempo_speed_borderID" class = "tempo_speed_border"></div>
+	<div id = "loop_borderID" class = "loop_border"></div>
+</div>
+
+<div class = "icons_and_buttons">
+	<img class = "save" src="save-regular.png" alt="Save"></img>
+		<img class = "volume" src = "volume.png" alt = "Volume_Icon"></img>
+			<div class= "volume_slider"></div>
+				<img class = "slider" src="slider.png" alt="Music_Slider"></img>
+				<img class = "metronome" src = "metronome.png" alt = "Metronome"></img>
+			<img class = "tempo_speed" src = "speed.png" alt = "Tempo_Speed"></img>
+		<div class = "tempo_slider" ></div>
+	<img class = "loop" src = "loop2.png" alt = "Loop_Song"></img>
+</div>
+
+<div class = "music_bar">
+	<div class = "border_of_instrument_name"></div>
+		<div class = "instrument_name">Name of Instrument:</div>
+</div>
+
+<div class = "music_page">
+	<div class = "first_instrument_line"></div>
+		<div class = "second_instrument_line"></div>
+			<div class = "third_instrument_line"></div>
+
+<div class = "side_instruments">
+	<div class = "side_first_instrument"></div>
+	<img src="https://www.pngarts.com/files/1/Guitar-PNG-Transparent-Image-1.png" alt="Melody" class="melody_image"></img>
+		<div class = "side_second_instrument"></div>
+		<img src="http://www.pngmart.com/files/1/Kohler-Campbell-Piano-PNG.png" alt="Chords" class="chord_image"></img>
+			<div class = "side_third_instrument"></div>
+			<img src="https://i.pinimg.com/originals/83/7d/a0/837da07011c926a7db3c1eb82e1ba325.png" alt="Drum Beat" class="beat_image"></img>
+</div>
+
+</div>
+
+<div class = "bottom_bar">
+	<div class = "bottom_background"></div>
+		<div class = "bottom_trapezoid"></div>
+</div>
+
+
+
+<style>
+
+.nav{
+height:11%;
+background-color:#343a40;
+}
+
+.save{
+position:absolute;
+z-index:3;
+width:2.5%;
+height:5%;
+left:2.75%;
+top:3%;
+}
+
+.save_border{
+position:absolute;
+z-index:2;
+left:0%;
+top:0%;
+height:11%;
+width:8%;
+border-right: 2px solid #2b2b2a;
+}
+
+.save_border_top{
+position:absolute;
+z-index:4;
+left:0%;
+top:0%;
+height:11%;
+width:8%;
+}
+
+.volume{
+position:absolute;
+z-index:2;
+width:2.5%;
+height:5%;
+left:11.65%;
+top:3%;
+}
+
+.volume_border{
+position:absolute;
+z-index:1;
+left:8%;
+top:0%;
+height:11%;
+width:21%;
+border-right: 2px solid #2b2b2a;
+}
+
+
+.volume_border_top{
+position:absolute;
+z-index:3;
+left:8%;
+top:0%;
+height:11%;
+width:21%;
+}
+
+.volume_slider{
+position:absolute;
+z-index:2;
+width:10%;
+height:2%;
+left:15.35%;
+top:4.5%;
+border-radius:2pt;
+background-color:#9e9e9e;
+}
+
+.slider{
+position:absolute;
+z-index:2;
+width:2.5%;
+height:5%;
+left:31.75%;
+top:3%;
+}
+
+.slider_border{
+position:absolute;
+z-index:0;
+left:29%;
+top:0%;
+height:11%;
+width:8%;
+border-right: 2px solid #2b2b2a;
+}
+
+.slider_border_top{
+position:absolute;
+z-index:3;
+left:29%;
+top:0%;
+height:11%;
+width:8%;
+}
+
+.metronome{
+position:absolute;
+z-index:2;
+width:2.5%;
+height:5%;
+left:66.33%;
+top:3%;
+}
+
+.metronome_border{
+position:absolute;
+z-index:1;
+left:63%;
+top:0%;
+height:11%;
+width:9%;
+border-left: 2px solid #2b2b2a;
+}
+
+
+.metronome_border_top{
+position:absolute;
+z-index:3;
+left:63%;
+top:0%;
+height:11%;
+width:9%;
+}
+
+.tempo_speed{
+position:absolute;
+z-index:2;
+width:2.5%;
+height:5%;
+left:74.9%;
+top:3%;
+}
+
+.tempo_speed_border{
+position:absolute;
+z-index:1;
+left:72%;
+top:0%;
+height:11%;
+width:20%;
+border-left: 2px solid #2b2b2a;
+}
+
+.tempo_speed_border_top{
+position:absolute;
+z-index:3;
+left:72%;
+top:0%;
+height:11%;
+width:20%;
+}
+
+.tempo_slider{
+position:absolute;
+z-index:2;
+width:10%;
+height:2%;
+left:78.6%;
+top:4.5%;
+border-radius:2pt;
+background-color:#9e9e9e;
+}
+
+.loop{
+position:absolute;
+z-index:2;
+width:2.5%;
+height:5%;
+left:94.75%;
+top:3%;
+}
+
+
+.loop_border{
+position:absolute;
+z-index:1;
+left:92%;
+top:0%;
+height:11%;
+width:7.8%;
+border-left: 2px solid #2b2b2a;
+}
+
+
+.loop_border_top{
+position:absolute;
+z-index:3;
+left:92%;
+top:0%;
+height:11%;
+width:7.8%;
+}
+
+.company_name{
+font-size:16;
+position:absolute;
+top: 4px;
+left: 43%;
+font-family: 'Montserrat', sans-serif;
+}
+
+.music_bar{
+position:absolute;
+height:4%;
+top:11%;
+width:100%;
+left:0%;
+background-color:#363533;
+border-top: 2px solid #2b2b2a;
+}
+
+.border_of_instrument_name{
+position:absolute;
+left:0%;
+width:12.5%;
+top:0%;
+height:100%;
+border-right: 2px solid #2b2b2a;
+z-index:2;
+}
+
+.active{
+background:#363533;
+}
+
+.inactive{
+background:transparent;
+}
+
+.instrument_name{
+position:absolute;
+left:0.5%;
+width:12%;
+top:12%;
+height:3%;
+font-family: 'Montserrat', sans-serif;
+font-size:14px;
+}
+
+body{
+margin:0%;
+padding:0%;
+color:white;
+background-image:url("https://images.unsplash.com/photo-1545056003-1f67120eceb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80");
+background-size:auto;
+background-position:45% 35%;
+}
+
+.trapezoid{
+border-bottom: 60px solid #555;
+border-left: 39px solid transparent;
+border-right: 39px solid transparent;
+width: 20%;
+position:absolute;
+top:0%;
+left:37%;
+transform: rotate(180deg);
+animation-name:trapezium;
+animation-duration:20s;
+animation-iteration-count:infinite;
+}
+
+@keyframes trapezium{
+	0%{border-bottom: 65px solid #555;}
+	50%{border-bottom: 65px solid #363533;}
+	100%{border-bottom: 65px solid #555;}
+}
+
+.first_instrument_line{
+top:15%;
+left:12.5%;
+height:25%;
+width:87.5%;
+position:absolute;
+opacity:85%;
+animation-name:color1;
+animation-duration:80s;
+animation-iteration-count:infinite;
+border-top: 2px solid rgba(43, 43, 42);
+}
+
+.second_instrument_line{
+top:40%;
+left:12.5%;
+height:25%;
+width:87.5%;
+position:absolute;
+opacity:85%;
+animation-name:color2;
+animation-duration:80s;
+animation-iteration-count:infinite;
+border-top: 2px solid #2b2b2a;
+}
+
+.third_instrument_line{
+top:65%;
+left:12.5%;
+height:25%;
+width:87.5%;
+position:absolute;
+opacity:85%;
+animation-name:color3;
+animation-duration:80s;
+animation-iteration-count:infinite;
+border-top: 2px solid #2b2b2a;
+}
+
+@keyframes color1{
+	0%{background-color:#dbc207;}
+	33%{background-color:#9d009d;}
+	66%{background-color:#080112;}
+	100%{background-color:#dbc207;}
+}
+
+@keyframes color2{
+	0%{background-color:#9d009d;}
+	33%{background-color:#080112;}
+	66%{background-color:#dbc207;}
+	100%{background-color:#9d009d;}
+}
+
+@keyframes color3{
+	0%{background-color:#080112;}
+	33%{background-color:#dbc207;}
+	66%{background-color:#9d009d;}
+	100%{background-color:#080112;}
+}
+
+.side_first_instrument{
+top:15%;
+left:0%;
+background-color:#524845;
+height:25%;
+width:12.5%;
+position: absolute;
+border-top: 2px solid #2b2b2a;
+border-right: 2px solid #2b2b2a;
+}
+
+.melody_image{
+top:17.5%;
+left:2%;
+width:9%;
+height:20%;
+z-index:2;
+position:absolute;
+}
+
+.side_second_instrument{
+top:40%;
+left:0%;
+background-color:#524845;
+height:25%;
+width:12.5%;
+position: absolute;
+border-top: 2px solid #2b2b2a;
+border-right: 2px solid #2b2b2a;
+}
+
+.chord_image{
+top:42.5%;
+left:1%;
+width:9%;
+height:20%;
+z-index:2;
+position:absolute;
+}
+
+.side_third_instrument{
+top:65%;
+left:0%;
+background-color:#524845;
+height:25%;
+width:12.5%;
+position: absolute;
+border-top: 2px solid #2b2b2a;
+border-right: 2px solid #2b2b2a;
+}
+
+.beat_image{
+top:67.5%;
+left:2%;
+width:9%;
+height:20%;
+z-index:2;
+position:absolute;
+}
+
+
+.bottom_background{
+background-color:#343a40;
+border-top: 2px solid #2b2b2a;
+width:100%;
+height:10%;
+left:0%;
+top:90%;
+position:absolute;
+z-index:1;
+}
+
+.bottom_trapezoid{
+border-bottom: 40px solid #555;
+border-left: 50px solid transparent;
+border-right: 47px solid transparent;
+height: 8%;
+width: 175px;
+position:absolute;
+top:85%;
+left:37%;
+z-index:2;
+animation-name:trapezium_bottom;
+animation-duration:20s;
+animation-iteration-count:infinite;
+}
+
+@keyframes trapezium_bottom{
+	0%{border-bottom: 42px solid #555;}
+	50%{border-bottom: 42px solid #363533;}
+	100%{border-bottom: 42px solid #555;}
+}
+
+
+</style>
+</body>
+
+<script>
+
+function change(){
+save_borderID.classList.toggle("active")
+}
+
+function normalise(){
+save_borderID.classList.toggle("inactive")
+}
+
+function change1(){
+volume_borderID.classList.toggle("active")
+}
+
+function normalise1(){
+volume_borderID.classList.toggle("inactive")
+}
+
+function change2(){
+slider_borderID.classList.toggle("active")
+}
+
+function normalise2(){
+slider_borderID.classList.toggle("inactive")
+}
+
+function change3(){
+metronome_borderID.classList.toggle("active")
+}
+
+function normalise3(){
+metronome_borderID.classList.toggle("inactive")
+}
+
+function change4(){
+tempo_speed_borderID.classList.toggle("active")
+}
+
+function normalise4(){
+tempo_speed_borderID.classList.toggle("inactive")
+}
+
+function change5(){
+loop_borderID.classList.toggle("active")
+}
+
+function normalise5(){
+loop_borderID.classList.toggle("inactive")
+}
+
+</script>

@@ -41,7 +41,7 @@
         <img class = "music_wallpaper" src = "wallpaper2.jpg">
       </img>
         </div>
-          <pre class = "future_line">Karshin S    -   Thesara H  -  Jack S    -   Production</pre>
+          <pre class = "future_line">Karshin S    -   Thesara H  -  Jack S    -   Music Sensation</pre>
             <div class = "slogan">
               Music shouldn't be contained. Instead, music should be for everyone.
               </div
@@ -67,8 +67,10 @@
         </div>
     </div>
 
-      <img src="down-arrow.png" class = "signal_down1"></img>
-      <img src="opposite-down-arrow.png" class = "signal_down2"></img>
+      <img src="down-arrow.png" class = "signal_down1">
+    </img>
+      <img src="opposite-down-arrow.png" class = "signal_down2">
+    </img>
 
     <div class = "our_mission_page">
       <div class = "title">Our Goal
@@ -86,18 +88,39 @@
     <div class = "player_introduction">
       <div class = "feedback_title" > Meet the team </div>
         <div class="img-hover-zoom1 img-hover-zoom--slowmo1">
-            <img class = "feedback_1" src="Karshin.jpg" alt="Karshin"></img>
+            <img class = "feedback_1" src="Karshin.jpg" alt="Karshin">
+          </img>
         </div>
         <div class="img-hover-zoom2 img-hover-zoom--slowmo2">
-          <img class = "feedback_2" src="thesara.jpg" alt="Thesara"></img>
+          <img class = "feedback_2" src="thesara.jpg" alt="Thesara">
+        </img>
         </div>
         <div class="img-hover-zoom3 img-hover-zoom--slowmo3">
-          <img class = "feedback_3" src="jack3.jpg" alt="Jack"></img>
+          <img class = "feedback_3" src="jack3.jpg" alt="Jack">
+        </img>
         </div>
     </div>
 
     <div class = "the_team">
         <div class = "feedback_paragraph" > Left to right: <i><b>Karshin</b></i> - Software Engineer,<i><b>Thesara</b></i>- Software Engineer, <i><b>Jack</b></i> - Project Manager</div>
+    </div>
+
+    <div class = "spacious">
+    </div>
+
+    <div class = "main_player_screen">
+      <a href="HIP.html" class = "large_player_title"> The Music Player
+      </a>
+      <pre class = "title_shadow2">Music
+      Player</pre>
+        <img  class ="music_player_image" src = "webpage_image.jpg" alt="Music Player Image">
+      </img>
+          <a href="HIP.html" class = "player_description"> The Music Player is meant to send an output to the Haptic Sensor on the Ardunio (wristband).
+             The Arduino Sensor is then meant to pick up the song and vibrate the haptic sensor based on the beat. We have made the website on our side but with more support, we can connect the arduino to perform the actions listed above.
+            <b> Click this paragraph or page title to redirect to the music player.</b>
+          </a>
+      <div class = "company_last"> Music Sensation
+       </div>
     </div>
 
   </body>
@@ -606,6 +629,92 @@ border:2px solid black;
   width:100%;
   height:8%;
   position:absolute;
+}
+
+.main_player_screen{
+  top:300%;
+  left:0%;
+  width:100%;
+  height:85%;
+  position:absolute;
+  z-index:0;
+  background: linear-gradient(white, white, white, white, white, white, white, white, darkgrey );
+}
+
+.spacious{
+  top:288%;
+  left:0%;
+  height:12%;
+  width:100%;
+  position:absolute;
+  z-index:90;
+}
+
+.music_player_image{
+  top:20%;
+  height:60%;
+  width:45%;
+  left:52.5%;
+  z-index:1;
+  border: 2px solid black;
+  position:absolute;
+  z-index:6;
+}
+
+.large_player_title{
+  position:absolute;
+  font-size: 50px;
+  top:25%;
+  left:5%;
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+  font-weight:600;
+  letter-spacing:1px;
+  z-index:2;
+  text-decoration:underline;
+  text-shadow:1px 1px orange;
+}
+
+.player_description{
+  position:absolute;
+  font-size:24px;
+  top:44%;
+  left:3%;
+  width:45%;
+  color:#292722;
+  font-family: mr-eaves-modern,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  z-index:2;
+  text-align: justify;
+  text-decoration: none;
+}
+
+.title_shadow2{
+  position:absolute;
+  font-size: 180px;
+  top:-35%;
+  left:30%;
+  font-family: 'Montserrat', sans-serif;
+  color:transparent;
+  font-weight:600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: darkgrey;
+  z-index:1;
+}
+
+.company_last{
+  position:absolute;
+  font-size:40px;
+  top:90%;
+  left:2%;
+  opacity:0.8;
+  font-family: 'Montserrat', sans-serif;
+  color:transparent;
+  font-weight:600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  z-index:1;
 }
 
 </style>
